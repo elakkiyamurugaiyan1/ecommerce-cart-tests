@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteEcommerce]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestEcommerce(failed)">
+    <classes>
+      <class name="TestCasesFolder.SignupTest">
+        <methods>
+          <include name="StartTest"/>
+          <include name="Registration"/>
+        </methods>
+      </class> <!-- TestCasesFolder.SignupTest -->
+    </classes>
+  </test> <!-- TestEcommerce(failed) -->
+</suite> <!-- Failed suite [SuiteEcommerce] -->

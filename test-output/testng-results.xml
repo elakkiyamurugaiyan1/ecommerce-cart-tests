@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-06T00:40:18 SGT" name="SuiteEcommerce" finished-at="2025-07-06T00:40:59 SGT" duration-ms="41486">
+    <groups>
+    </groups>
+    <test started-at="2025-07-06T00:40:18 SGT" name="TestEcommerce" finished-at="2025-07-06T00:40:59 SGT" duration-ms="41486">
+      <class name="TestCasesFolder.SignupTest">
+        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.SignupTest@f78a47e]" started-at="2025-07-06T00:40:18 SGT" name="StartTest" finished-at="2025-07-06T00:40:21 SGT" duration-ms="3024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method signature="Registration()[pri:0, instance:TestCasesFolder.SignupTest@f78a47e]" started-at="2025-07-06T00:40:21 SGT" name="Registration" finished-at="2025-07-06T00:40:26 SGT" duration-ms="5370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+      </class> <!-- TestCasesFolder.SignupTest -->
+      <class name="TestCasesFolder.CheckoutOrderTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@79e4c792]" started-at="2025-07-06T00:40:44 SGT" name="startTest" finished-at="2025-07-06T00:40:47 SGT" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="CheckoutProduct()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@79e4c792]" started-at="2025-07-06T00:40:47 SGT" name="CheckoutProduct" finished-at="2025-07-06T00:40:59 SGT" duration-ms="12090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutProduct -->
+      </class> <!-- TestCasesFolder.CheckoutOrderTest -->
+      <class name="TestCasesFolder.LoginTest">
+        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:26 SGT" name="StartTest" finished-at="2025-07-06T00:40:28 SGT" duration-ms="2434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method signature="loginwith_Incorrect_credentials()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:28 SGT" name="loginwith_Incorrect_credentials" finished-at="2025-07-06T00:40:30 SGT" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwith_Incorrect_credentials -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:30 SGT" name="close" finished-at="2025-07-06T00:40:30 SGT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:30 SGT" name="StartTest" finished-at="2025-07-06T00:40:33 SGT" duration-ms="2702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method signature="loginwith_correct_credentials_withoutLogout()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:33 SGT" name="loginwith_correct_credentials_withoutLogout" finished-at="2025-07-06T00:40:36 SGT" duration-ms="3059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwith_correct_credentials_withoutLogout -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-06T00:40:36 SGT" name="close" finished-at="2025-07-06T00:40:36 SGT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCasesFolder.LoginTest -->
+      <class name="TestCasesFolder.AddProductToCartTest">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:TestCasesFolder.AddProductToCartTest@17f9d882]" started-at="2025-07-06T00:40:36 SGT" name="startTest" finished-at="2025-07-06T00:40:39 SGT" duration-ms="2483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="addProduct()[pri:0, instance:TestCasesFolder.AddProductToCartTest@17f9d882]" started-at="2025-07-06T00:40:39 SGT" name="addProduct" finished-at="2025-07-06T00:40:44 SGT" duration-ms="5780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+      </class> <!-- TestCasesFolder.AddProductToCartTest -->
+    </test> <!-- TestEcommerce -->
+  </suite> <!-- SuiteEcommerce -->
+</testng-results>
