@@ -28,7 +28,7 @@ public class SignupTest {
 	@Test
 		public void Registration()throws IOException
 		{
-		signuppage.signup("Nila", "nilamaran1234567890123456789@gmail.com");
+		signuppage.signup("Nila", "nilamaran12345678901234567890@gmail.com");
 		signuppage.accountInformation("hello@123", "17", "March", "2019");
 	
 		signuppage.addressInformation("Yazh", "Nila", "Google", "Avenue 1", "West", " Tamilnadu", "Trichy", "1212", "214124214");

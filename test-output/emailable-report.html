@@ -9,14 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SuiteEcommerce</th></tr>
-<tr><td><a href="#t0">TestEcommerce</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">41,486</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestEcommerce</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">45,800</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteEcommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestEcommerce &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCasesFolder.AddProductToCartTest</td><td><a href="#m0">addProduct</a></td><td rowspan="1">1751733639200</td><td rowspan="1">5780</td></tr><tr class="passedodd"><td rowspan="1">TestCasesFolder.CheckoutOrderTest</td><td><a href="#m1">CheckoutProduct</a></td><td rowspan="1">1751733647502</td><td rowspan="1">12090</td></tr><tr class="passedeven"><td rowspan="2">TestCasesFolder.LoginTest</td><td><a href="#m2">loginwith_Incorrect_credentials</a></td><td rowspan="1">1751733628981</td><td rowspan="1">1678</td></tr><tr class="passedeven"><td><a href="#m3">loginwith_correct_credentials_withoutLogout</a></td><td rowspan="1">1751733633493</td><td rowspan="1">3059</td></tr><tr class="passedodd"><td rowspan="1">TestCasesFolder.SignupTest</td><td><a href="#m4">Registration</a></td><td rowspan="1">1751733621176</td><td rowspan="1">5370</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SuiteEcommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestEcommerce &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCasesFolder.SignupTest</td><td><a href="#m0">Registration</a></td><td rowspan="1">1751997899780</td><td rowspan="1">11969</td></tr><tr><th colspan="4">TestEcommerce &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCasesFolder.AddProductToCartTest</td><td><a href="#m1">addProduct</a></td><td rowspan="1">1751997923411</td><td rowspan="1">5738</td></tr><tr class="passedodd"><td rowspan="1">TestCasesFolder.CheckoutOrderTest</td><td><a href="#m2">CheckoutProduct</a></td><td rowspan="1">1751997931636</td><td rowspan="1">10947</td></tr><tr class="passedeven"><td rowspan="2">TestCasesFolder.LoginTest</td><td><a href="#m3">loginwith_Incorrect_credentials</a></td><td rowspan="1">1751997914379</td><td rowspan="1">1740</td></tr><tr class="passedeven"><td><a href="#m4">loginwith_correct_credentials_withoutLogout</a></td><td rowspan="1">1751997918708</td><td rowspan="1">2275</td></tr></tbody>
 </table>
-<h2>TestEcommerce</h2><h3 id="m0">TestCasesFolder.AddProductToCartTest#addProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCasesFolder.CheckoutOrderTest#CheckoutProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCasesFolder.LoginTest#loginwith_Incorrect_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCasesFolder.LoginTest#loginwith_correct_credentials_withoutLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCasesFolder.SignupTest#Registration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestEcommerce</h2><h3 id="m0">TestCasesFolder.SignupTest#Registration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f06b03df15b98e0d9a39a3eef657313, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61651/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f06b03df15b98e0d9a39a3eef657313
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageModel1.SignupPage.accountInformation(SignupPage.java:21)
+	at TestCasesFolder.SignupTest.Registration(SignupTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCasesFolder.AddProductToCartTest#addProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCasesFolder.CheckoutOrderTest#CheckoutProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCasesFolder.LoginTest#loginwith_Incorrect_credentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCasesFolder.LoginTest#loginwith_correct_credentials_withoutLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

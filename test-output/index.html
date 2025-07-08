@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SuiteEcommerce" class="navigator-link">
-              <span class="suite-name border-passed">SuiteEcommerce</span>
+              <span class="suite-name border-failed">SuiteEcommerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-SuiteEcommerce" class="navigator-link ">
-                    <span>C:\Users\hp\eclipse-workspace\2025Ecommerce\testng.xml</span>
+                    <span>C:\Users\hp\git\EcommerceLocRep\2025Ecommerce\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteEcommerce" class="hide-methods failed suite-SuiteEcommerce"> (hide)</a> <!-- hide-methods failed suite-SuiteEcommerce -->
+                      <a href="#" panel-name="suite-SuiteEcommerce" class="show-methods failed suite-SuiteEcommerce"> (show)</a> <!-- show-methods failed suite-SuiteEcommerce -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteEcommerce">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SuiteEcommerce" title="TestCasesFolder.SignupTest" class="method navigator-link" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteEcommerce -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SuiteEcommerce" title="TestCasesFolder.CheckoutOrderTest" class="method navigator-link" hash-for-method="CheckoutProduct">CheckoutProduct</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SuiteEcommerce" title="TestCasesFolder.SignupTest" class="method navigator-link" hash-for-method="Registration">Registration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +147,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SuiteEcommerce" class="panel SuiteEcommerce">
+          <div class="suite-SuiteEcommerce-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCasesFolder.SignupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Registration">
+                  </a> <!-- Registration -->
+                  <span class="method-name">Registration</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_gender2&quot;}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f06b03df15b98e0d9a39a3eef657313, findElement {value=id_gender2, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61651/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f06b03df15b98e0d9a39a3eef657313
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at PageModel1.SignupPage.accountInformation(SignupPage.java:21)
+	at TestCasesFolder.SignupTest.Registration(SignupTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteEcommerce-class-failed -->
           <div class="suite-SuiteEcommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -163,21 +212,6 @@
           <div class="suite-SuiteEcommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCasesFolder.CheckoutOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CheckoutProduct">
-                  </a> <!-- CheckoutProduct -->
-                  <span class="method-name">CheckoutProduct</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SuiteEcommerce-class-passed -->
-          <div class="suite-SuiteEcommerce-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">TestCasesFolder.AddProductToCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -193,14 +227,14 @@
           <div class="suite-SuiteEcommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCasesFolder.SignupTest</span>
+              <span class="class-name">TestCasesFolder.CheckoutOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Registration">
-                  </a> <!-- Registration -->
-                  <span class="method-name">Registration</span>
+                  <a name="CheckoutProduct">
+                  </a> <!-- CheckoutProduct -->
+                  <span class="method-name">CheckoutProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,7 +242,7 @@
         </div> <!-- panel SuiteEcommerce -->
         <div panel-name="test-xml-SuiteEcommerce" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\eclipse-workspace\2025Ecommerce\testng.xml</span>
+            <span class="header-content">C:\Users\hp\git\EcommerceLocRep\2025Ecommerce\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -262,30 +296,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CheckoutProduct')
-data.setCell(0, 2, 'TestCasesFolder.CheckoutOrderTest')
-data.setCell(0, 3, 12090);
+data.setCell(0, 1, 'Registration')
+data.setCell(0, 2, 'TestCasesFolder.SignupTest')
+data.setCell(0, 3, 11969);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addProduct')
-data.setCell(1, 2, 'TestCasesFolder.AddProductToCartTest')
-data.setCell(1, 3, 5780);
+data.setCell(1, 1, 'CheckoutProduct')
+data.setCell(1, 2, 'TestCasesFolder.CheckoutOrderTest')
+data.setCell(1, 3, 10947);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Registration')
-data.setCell(2, 2, 'TestCasesFolder.SignupTest')
-data.setCell(2, 3, 5370);
+data.setCell(2, 1, 'addProduct')
+data.setCell(2, 2, 'TestCasesFolder.AddProductToCartTest')
+data.setCell(2, 3, 5738);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginwith_correct_credentials_withoutLogout')
 data.setCell(3, 2, 'TestCasesFolder.LoginTest')
-data.setCell(3, 3, 3059);
+data.setCell(3, 3, 2275);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginwith_Incorrect_credentials')
 data.setCell(4, 2, 'TestCasesFolder.LoginTest')
-data.setCell(4, 3, 1678);
+data.setCell(4, 3, 1740);
 window.suiteTableData['SuiteEcommerce']= { tableData: data, tableDiv: 'times-div-SuiteEcommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-SuiteEcommerce">
               </div> <!-- times-div-SuiteEcommerce -->
             </div> <!-- times-div -->
@@ -317,57 +351,59 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Registration</span>
-                <span class="method-start">3025 ms</span>
+                <span class="method-start">2950 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCasesFolder.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">StartTest</span>
-                <span class="method-start">8396 ms</span>
+                <span class="method-start">14933 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginwith_Incorrect_credentials</span>
-                <span class="method-start">10830 ms</span>
+                <span class="method-start">17549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">12510 ms</span>
+                <span class="method-start">19293 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">StartTest</span>
-                <span class="method-start">12639 ms</span>
+                <span class="method-start">19424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginwith_correct_credentials_withoutLogout</span>
-                <span class="method-start">15342 ms</span>
+                <span class="method-start">21878 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">18401 ms</span>
+                <span class="method-start">24157 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCasesFolder.AddProductToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">18566 ms</span>
+                <span class="method-start">24302 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProduct</span>
-                <span class="method-start">21049 ms</span>
+                <span class="method-start">26581 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCasesFolder.CheckoutOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">26832 ms</span>
+                <span class="method-start">32319 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckoutProduct</span>
-                <span class="method-start">29351 ms</span>
+                <span class="method-start">34806 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
