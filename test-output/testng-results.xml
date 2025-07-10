@@ -1,137 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T02:04:56 SGT" name="SuiteEcommerce" finished-at="2025-07-09T02:05:42 SGT" duration-ms="45800">
+  <suite started-at="2025-07-10T23:30:38 SGT" name="SuiteEcommerce" finished-at="2025-07-10T23:31:23 SGT" duration-ms="44631">
     <groups>
     </groups>
-    <test started-at="2025-07-09T02:04:56 SGT" name="TestEcommerce" finished-at="2025-07-09T02:05:42 SGT" duration-ms="45800">
+    <test started-at="2025-07-10T23:30:38 SGT" name="TestEcommerce" finished-at="2025-07-10T23:31:23 SGT" duration-ms="44631">
       <class name="TestCasesFolder.SignupTest">
-        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.SignupTest@f78a47e]" started-at="2025-07-09T02:04:56 SGT" name="StartTest" finished-at="2025-07-09T02:04:59 SGT" duration-ms="2950" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestCasesFolder.SignupTest@76a4ebf2]" started-at="2025-07-10T23:30:38 SGT" name="setupBrowser" finished-at="2025-07-10T23:30:41 SGT" duration-ms="2988" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartTest -->
-        <test-method signature="Registration()[pri:0, instance:TestCasesFolder.SignupTest@f78a47e]" started-at="2025-07-09T02:04:59 SGT" name="Registration" finished-at="2025-07-09T02:05:11 SGT" duration-ms="11969" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7f06b03df15b98e0d9a39a3eef657313, findElement {value=id_gender2, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61651/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f06b03df15b98e0d9a39a3eef657313]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender2"}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.32.0', revision: 'd17c8aa950'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7f06b03df15b98e0d9a39a3eef657313, findElement {value=id_gender2, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61651/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f06b03df15b98e0d9a39a3eef657313
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at PageModel1.SignupPage.accountInformation(SignupPage.java:21)
-at TestCasesFolder.SignupTest.Registration(SignupTest.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="Registration()[pri:0, instance:TestCasesFolder.SignupTest@76a4ebf2]" started-at="2025-07-10T23:30:41 SGT" name="Registration" finished-at="2025-07-10T23:30:48 SGT" duration-ms="6483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCasesFolder.SignupTest@76a4ebf2]" started-at="2025-07-10T23:30:48 SGT" name="tearDown" finished-at="2025-07-10T23:30:48 SGT" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- TestCasesFolder.SignupTest -->
       <class name="TestCasesFolder.CheckoutOrderTest">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@79e4c792]" started-at="2025-07-09T02:05:29 SGT" name="startTest" finished-at="2025-07-09T02:05:31 SGT" duration-ms="2487" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@cecf639]" started-at="2025-07-10T23:31:08 SGT" name="setupBrowser" finished-at="2025-07-10T23:31:11 SGT" duration-ms="2449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@cecf639]" started-at="2025-07-10T23:31:11 SGT" name="startTest" finished-at="2025-07-10T23:31:11 SGT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="CheckoutProduct()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@79e4c792]" started-at="2025-07-09T02:05:31 SGT" name="CheckoutProduct" finished-at="2025-07-09T02:05:42 SGT" duration-ms="10947" status="PASS">
+        <test-method signature="CheckoutProduct()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@cecf639]" started-at="2025-07-10T23:31:11 SGT" name="CheckoutProduct" finished-at="2025-07-10T23:31:22 SGT" duration-ms="11544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckoutProduct -->
-      </class> <!-- TestCasesFolder.CheckoutOrderTest -->
-      <class name="TestCasesFolder.LoginTest">
-        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:11 SGT" name="StartTest" finished-at="2025-07-09T02:05:14 SGT" duration-ms="2616" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCasesFolder.CheckoutOrderTest@cecf639]" started-at="2025-07-10T23:31:22 SGT" name="tearDown" finished-at="2025-07-10T23:31:23 SGT" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartTest -->
-        <test-method signature="loginwith_Incorrect_credentials()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:14 SGT" name="loginwith_Incorrect_credentials" finished-at="2025-07-09T02:05:16 SGT" duration-ms="1740" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCasesFolder.CheckoutOrderTest -->
+      <class name="TestCasesFolder.LoginTest">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:48 SGT" name="setupBrowser" finished-at="2025-07-10T23:30:51 SGT" duration-ms="2828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:51 SGT" name="initPageObjects" finished-at="2025-07-10T23:30:51 SGT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjects -->
+        <test-method signature="loginwith_Incorrect_credentials()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:51 SGT" name="loginwith_Incorrect_credentials" finished-at="2025-07-10T23:30:53 SGT" duration-ms="1870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwith_Incorrect_credentials -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:16 SGT" name="close" finished-at="2025-07-09T02:05:16 SGT" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:53 SGT" name="tearDown" finished-at="2025-07-10T23:30:53 SGT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:16 SGT" name="StartTest" finished-at="2025-07-09T02:05:18 SGT" duration-ms="2454" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:53 SGT" name="setupBrowser" finished-at="2025-07-10T23:30:55 SGT" duration-ms="2579" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartTest -->
-        <test-method signature="loginwith_correct_credentials_withoutLogout()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:18 SGT" name="loginwith_correct_credentials_withoutLogout" finished-at="2025-07-09T02:05:20 SGT" duration-ms="2275" status="PASS">
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="loginwith_correct_credentials_withoutLogout()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:55 SGT" name="loginwith_correct_credentials_withoutLogout" finished-at="2025-07-10T23:30:58 SGT" duration-ms="2428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginwith_correct_credentials_withoutLogout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:TestCasesFolder.LoginTest@1c5920df]" started-at="2025-07-09T02:05:20 SGT" name="close" finished-at="2025-07-09T02:05:21 SGT" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="initPageObjects()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:55 SGT" name="initPageObjects" finished-at="2025-07-10T23:30:55 SGT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- initPageObjects -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCasesFolder.LoginTest@28261e8e]" started-at="2025-07-10T23:30:58 SGT" name="tearDown" finished-at="2025-07-10T23:30:58 SGT" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- TestCasesFolder.LoginTest -->
       <class name="TestCasesFolder.AddProductToCartTest">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:TestCasesFolder.AddProductToCartTest@17f9d882]" started-at="2025-07-09T02:05:21 SGT" name="startTest" finished-at="2025-07-09T02:05:23 SGT" duration-ms="2278" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:TestCasesFolder.AddProductToCartTest@5386659f]" started-at="2025-07-10T23:30:58 SGT" name="setupBrowser" finished-at="2025-07-10T23:31:01 SGT" duration-ms="2627" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method signature="addProduct()[pri:0, instance:TestCasesFolder.AddProductToCartTest@17f9d882]" started-at="2025-07-09T02:05:23 SGT" name="addProduct" finished-at="2025-07-09T02:05:29 SGT" duration-ms="5738" status="PASS">
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="StartTest()[pri:0, instance:TestCasesFolder.AddProductToCartTest@5386659f]" started-at="2025-07-10T23:31:01 SGT" name="StartTest" finished-at="2025-07-10T23:31:01 SGT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method signature="addProduct()[pri:0, instance:TestCasesFolder.AddProductToCartTest@5386659f]" started-at="2025-07-10T23:31:01 SGT" name="addProduct" finished-at="2025-07-10T23:31:08 SGT" duration-ms="7472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCasesFolder.AddProductToCartTest@5386659f]" started-at="2025-07-10T23:31:08 SGT" name="tearDown" finished-at="2025-07-10T23:31:08 SGT" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- TestCasesFolder.AddProductToCartTest -->
     </test> <!-- TestEcommerce -->
   </suite> <!-- SuiteEcommerce -->

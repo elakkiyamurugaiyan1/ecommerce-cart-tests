@@ -1,4 +1,4 @@
-package DriverManager;
+package Base;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -7,14 +7,15 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
-public class DriverManager {
+public class BaseTest {
 
-	public static WebDriver driver;
+	public  WebDriver driver;
+	@BeforeMethod
+	public  void setupBrowser()  {
 	
-	public static void setup()  {
-	
-
 		ChromeOptions options = new ChromeOptions();
 		  Map<String, Object> prefs = new HashMap<>();
 	        prefs.put("credentials_enable_service", false);
@@ -27,10 +28,10 @@ public class DriverManager {
 			driver=new ChromeDriver(options);
 		driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+		  driver.get("https://automationexercise.com/login");
 	}
-	
-	public static void tearDown()
+	@AfterMethod
+	public  void tearDown()
 	{
 		driver.quit();
 		

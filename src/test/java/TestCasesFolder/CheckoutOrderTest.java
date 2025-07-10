@@ -8,12 +8,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import DriverManager.DriverManager;
+import Base.BaseTest;
 import PageModel1.AddProductDetailsPage;
 import PageModel1.CheckoutOrderPage;
 import PageModel1.LoginPage;
 
-public class CheckoutOrderTest {
+public class CheckoutOrderTest extends BaseTest {
 AddProductDetailsPage addProductToCart;
 CheckoutOrderPage checkOutOrder;
 LoginPage loginpage;
@@ -21,11 +21,9 @@ LoginPage loginpage;
 @BeforeMethod
 public void startTest()
 {	
-	DriverManager.setup();
-	DriverManager.driver.get("https://automationexercise.com/login");
-	loginpage=new LoginPage();
-	addProductToCart=new AddProductDetailsPage();
-	checkOutOrder=new CheckoutOrderPage();
+	loginpage=new LoginPage(driver);
+	addProductToCart=new AddProductDetailsPage(driver);
+	checkOutOrder=new CheckoutOrderPage(driver);
 		
 }
 
@@ -40,7 +38,7 @@ public void CheckoutProduct() throws IOException
 	checkOutOrder.proceedToCheckout();
 	checkOutOrder.placeorder();
 	checkOutOrder.PaymentDetails("debit", "1234567890", "345", "12", "2028");
-	Boolean verifyOrder=DriverManager.driver.findElement(By.xpath("//*[text()='Congratulations! Your order has been confirmed!'] ")).isDisplayed();
+	Boolean verifyOrder=driver.findElement(By.xpath("//*[text()='Congratulations! Your order has been confirmed!'] ")).isDisplayed();
 	Assert.assertTrue(verifyOrder, "Order is not suceesful!");
 }
 }

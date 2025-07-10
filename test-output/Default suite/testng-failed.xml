@@ -6,7 +6,9 @@
       <class name="TestCasesFolder.CheckoutOrderTest">
         <methods>
           <include name="startTest"/>
+          <include name="setupBrowser"/>
           <include name="CheckoutProduct"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- TestCasesFolder.CheckoutOrderTest -->
     </classes>
